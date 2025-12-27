@@ -813,4 +813,35 @@
     width: 100%;
   }
 }
+/* Centralização da seção CONTATO no mobile */
+@media (max-width: 768px) {
+  .contact-info {
+    text-align: center;
+  }
+
+  .contact-methods {
+    align-items: center;
+  }
+
+  .contact-method {
+    width: 100%;
+    max-width: 420px;
+    justify-content: center;
+    text-align: left; /* mantém ícone + texto organizados */
+  }
+
+  .contact-method-text h4,
+  .contact-method-text p {
+    text-align: left;
+  }
+
+  .contact-cta {
+    text-align: center;
+  }
+}
+@media (max-width: 768px) {
+  .contact-method {
+    backdrop-filter: blur(12px);
+  }
+}
 
