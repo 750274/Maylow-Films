@@ -783,3 +783,34 @@
                 font-size: 2rem;
             }
         }
+        /* Ajustes de centralização no HERO (mobile/tablet) */
+@media (max-width: 1200px) {
+  .hero-text {
+    text-align: center;
+  }
+
+  .hero-buttons {
+    justify-content: center;
+  }
+
+  .hero-stats {
+    justify-items: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-content {
+    padding: 0 1.5rem; /* já combina com seu nav */
+  }
+
+  .hero-stats {
+    grid-template-columns: 1fr; /* deixa tudo 1 embaixo do outro */
+    gap: 1rem;
+  }
+
+  .stat-item {
+    text-align: center;
+    width: 100%;
+  }
+}
+
