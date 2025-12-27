@@ -814,8 +814,15 @@
   }
 }
 /* Centralização da seção CONTATO no mobile */
+/* ===== Centralização REAL da seção CONTATO no mobile ===== */
 @media (max-width: 768px) {
-  .contact-info {
+
+  .contact-grid {
+    text-align: center;
+  }
+
+  .contact-info h2,
+  .contact-info p {
     text-align: center;
   }
 
@@ -824,21 +831,28 @@
   }
 
   .contact-method {
-    width: 100%;
+    flex-direction: column;      /* 🔥 isso é o principal */
+    align-items: center;
+    text-align: center;
+    gap: 0.5rem;
     max-width: 420px;
-    justify-content: center;
-    text-align: left; /* mantém ícone + texto organizados */
+    width: 100%;
+  }
+
+  .contact-icon-box {
+    margin-bottom: 0.3rem;
   }
 
   .contact-method-text h4,
   .contact-method-text p {
-    text-align: left;
+    text-align: center;
   }
 
   .contact-cta {
     text-align: center;
   }
 }
+
 @media (max-width: 768px) {
   .contact-method {
     backdrop-filter: blur(12px);
